@@ -35,6 +35,7 @@ while True:
         answer_mass.append(files[index])
         i = 0
         index += 1
+        # Подбираем перебором другие файлы на замену существующих, чтобы максимально забить место
         while max_val < value:
             if max_val - answer_mass[i] + files[index] <= value:
                 max_val = max_val - answer_mass[i] + files[index]
